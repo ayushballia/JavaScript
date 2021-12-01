@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first localStorage</title>
+  </head>
+  <body>
+    <script>
+      let myLeads = `["www.awesomelead.com"]`;
+
+      // 1. Turn the myLeds string into an array
+      myLeads = JSON.parse(myLeads);
+      // 2. Push a new value to the array
+      myLeads.push("www.lead2.com");
+      // 3. Turn the array into string again
+      myLeads = JSON.stringify(myLeads);
+      // 4. Console.log the string using typeof to verify that it's a string
+      console.log(typeof myLeads);
+    </script>
+  </body>
+</html>
